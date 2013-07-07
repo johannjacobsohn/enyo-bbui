@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bbUI Sample</title>
+
+	<!-- enyo --> 
+	<link rel="stylesheet" href="http://nightly.enyojs.com/latest/enyo-nightly/enyo.css">
+	<script src="http://nightly.enyojs.com/latest/enyo-nightly/enyo.js"></script>
+	<script src="http://nightly.enyojs.com/latest/lib/layout/package.js"></script>
+
+	<!-- bbUI/enyo -->
+	<script src="../package.js" type="text/javascript"></script>
+
+	<!-- Sample --> 
+	<script src="bbUISample.js" type="text/javascript"></script>
+</head>
+<body class="enyo-unselectable">
+	<script type="text/javascript">
+		document.addEventListener('webworksready', function(e) {
+			new bbUISample().renderInto(document.body);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+enyo.depends(
+	"bbUI.Toggle.js",
+	"bbUI.Action.js",
+	"bbUI.Button.js",
+	"bbUI.TitleBar.js",
+	"bbUI.Checkbox.js",
+	"bbUI.ActivityIndicator.js",
+	"bbUI.Progress.js",
+	"bbUI.RadioButton.js",
+	"bbUI.Slider.js",
+	"bbUI.Input.js",
+	"bbUI.PillButtons.js",
+	"bbUI.Select.js",
+	"bbUI.BBMbubbles.js",
+	"bbUI.js",
+	"bbUI.imageList.js",
+	"bbUI.ControlGroup.js"
+);
