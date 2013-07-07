@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Enyo-bbui by johannjacobsohn</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Enyo-bbui</h1>
+        <p>A bridge between EnyoJS and bbUI.js</p>
+
+        <p class="view"><a href="https://github.com/johannjacobsohn/enyo-bbui">View the Project on GitHub <small>johannjacobsohn/enyo-bbui</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/johannjacobsohn/enyo-bbui/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/johannjacobsohn/enyo-bbui/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/johannjacobsohn/enyo-bbui">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="enyojsbbuijs" class="anchor" href="#enyojsbbuijs"><span class="octicon octicon-link"></span></a>EnyoJS/bbUI.js</h1>
+
+<p>A bridge between <a href="http://enyojs.com">EnyoJS</a> and <a href="https://github.com/blackberry/bbUI.js/">bbUI.js</a>. Think onyx, only with Blackberry styling.</p>
+
+<h2>
+<a name="supported-widgets" class="anchor" href="#supported-widgets"><span class="octicon octicon-link"></span></a>Supported Widgets:</h2>
+
+<ul>
+<li>Action Bar <a href="https://github.com/blackberry/bbUI.js/wiki/Action-Bar">bbUI.js: Action Bars</a>
+</li>
+<li>TitleBar <a href="https://github.com/blackberry/bbUI.js/wiki/Title-Bars">bbUI.js: Title Bars</a>
+</li>
+<li>DropDown <a href="https://github.com/blackberry/bbUI.js/wiki/DropDowns">bbUI.js: DropDown</a>
+</li>
+<li>Pill-Buttons <a href="https://github.com/blackberry/bbUI.js/wiki/Pill-Buttons">bbUI.js: Pill Buttons</a>
+</li>
+<li>Inputs <a href="https://github.com/blackberry/bbUI.js/wiki/Inputs">bbUI.js: Inputs</a>
+</li>
+<li>ToggleButton <a href="https://github.com/blackberry/bbUI.js/wiki/Toggle-Buttons">bbUI.js: Toggle Buttons</a>
+</li>
+<li>Button <a href="https://github.com/blackberry/bbUI.js/wiki/Buttons">bbUI.js: Buttons</a>
+</li>
+<li>Checkboxes <a href="https://github.com/blackberry/bbUI.js/wiki/Checkboxes">bbUI.js: Checkboxes</a>
+</li>
+<li>ProgressIndicator <a href="https://github.com/blackberry/bbUI.js/wiki/Progress-Indicator">bbUI.js: Progress Indicator</a>
+</li>
+<li>BBMBubbles <a href="https://github.com/blackberry/bbUI.js/wiki/BBM-Bubbles">bbUI.js: BBM Bubbles</a>
+</li>
+<li>ActivityIndicator <a href="https://github.com/blackberry/bbUI.js/wiki/Activity-Indicator">bbUI.js: Pill Buttons</a>
+</li>
+<li>RadioButtons <a href="https://github.com/blackberry/bbUI.js/wiki/Radio-Buttons">bbUI.js: Radio Buttons</a>
+</li>
+</ul><h2>
+<a name="work-in-progress" class="anchor" href="#work-in-progress"><span class="octicon octicon-link"></span></a>Work in Progress:</h2>
+
+<ul>
+<li>ImageList <a href="https://github.com/blackberry/bbUI.js/wiki/Image-List">bbUI.js: Image List</a>
+</li>
+<li>Label Control Container &amp; ControlGroup  <a href="https://github.com/blackberry/bbUI.js/wiki/Label-Control-Container">bbUI.js: Label Control Container</a>
+</li>
+<li>Slider <a href="https://github.com/blackberry/bbUI.js/wiki/Sliders">bbUI.js: Sliders</a>
+</li>
+</ul><h2>
+<a name="soon" class="anchor" href="#soon"><span class="octicon octicon-link"></span></a>Soon:</h2>
+
+<ul>
+<li>ContextMenu - <a href="https://github.com/blackberry/bbUI.js/wiki/Context-Menus">bbUI.js: Context Menus</a>
+</li>
+<li>GridList <a href="https://github.com/blackberry/bbUI.js/wiki/Grid-List">bbUI.js: Grid List</a>
+</li>
+<li>ScreenMenu <a href="https://github.com/blackberry/bbUI.js/wiki/Screen-Menus">bbUI.js: Screen Menu</a>
+</li>
+</ul><p><a href="https://github.com/blackberry/bbUI.js/wiki/Scroll-Panel">ScrollPanel</a> can
+be easily done using <a href="https://github.com/enyojs/enyo/wiki/Panels">enyo layout
+panels</a> and thus won't be
+included here.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage:</h2>
+
+<p>Download or include as submodule</p>
+
+<pre><code>$ git submodule add git@github.com:johannjacobsohn/enyo-bbui.git lib/enyo-bbui &amp;&amp; git submodule update --init --recursive
+</code></pre>
+
+<p>And add <code>../lib/enyo-bbui</code> to your package.js.</p>
+
+<h2>
+<a name="dependencies-" class="anchor" href="#dependencies-"><span class="octicon octicon-link"></span></a>Dependencies: </h2>
+
+<ul>
+<li>
+<a href="https://github.com/enyojs/enyo">Enyo</a> (naturally)</li>
+<li>
+<a href="https://github.com/blackberry/bbUI.js.git">bbui</a> (included as submodule)</li>
+</ul><p>Icons in the sampler are taken from the <a href="https://github.com/blackberry/bbUI.js/tree/master/samples">bbUI.js sample
+application</a> and
+<a href="https://developer.blackberry.com/design/bb10/">Blackberrys "Blackberry 10
+Icons"</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/johannjacobsohn">johannjacobsohn</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
