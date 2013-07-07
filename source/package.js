@@ -12,7 +12,7 @@ enyo.depends(
 	"bbUI.PillButtons.js",
 	"bbUI.Select.js",
 	"bbUI.BBMbubbles.js",
-	"bbUI.js",
-	"bbUI.imageList.js",
+	"bbUI.Init.js",
+	"bbUI.ImageList.js",
 	"bbUI.ControlGroup.js"
 );

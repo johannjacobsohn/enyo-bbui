@@ -4,7 +4,7 @@
  * https://github.com/blackberry/bbUI.js/wiki/Image-List
  */
 enyo.kind({
-	name: "bbUI.imageList",
+	name: "bbUI.ImageList",
 	//~ kind: "enyo.List",
 	bbStyle: "arrowbuttons",
 	bbimageLoading: "",
@@ -31,7 +31,7 @@ enyo.kind({
  *
  */
 enyo.kind({
-	name: "listItem",
+	name: "bbUI.ListItem",
 	title: "",
 	img: "",
 	attributes: {

@@ -1,5 +1,5 @@
 enyo.kind({
-	name: "bbUI.init",
+	name: "bbUI.Init",
 	kind: "Component",
 
 	controlsDark: false,       // If set to true, the controls will use the dark theme

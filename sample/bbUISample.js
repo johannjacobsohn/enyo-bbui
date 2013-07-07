@@ -25,7 +25,7 @@ enyo.kind({
 		alert("saved");
 	},
 	components:[
-		{kind: "bbUI.init", controlsDark: true, listsDark: false},
+		{kind: "bbUI.Init", controlsDark: true, listsDark: false},
 		{kind: "Panels", arrangerKind: "CollapsingArranger", draggable: false, fit:true, style: "height: 100%", components: [
 
 			// contactlist view
@@ -34,13 +34,13 @@ enyo.kind({
 					{kind: "bbUI.TitleBar", caption: "bbUI.js/EnyoJS"},
 				]},
 				{kind: "enyo.Scroller", fit: true, horizontal: "hidden", components: [
-					{kind: "bbUI.imageList", ontap: "openConversation", components: [
-						{kind: "listItem", title: "Alec", content: "Talk to me!", img: "assets/avatars/alec.png"},
-						{kind: "listItem", title: "Dallas", content: "stiff and mechanic", img: "assets/avatars/dallas.png"},
-						{kind: "listItem", title: "Anders", content: "absolut maniac", img: "assets/avatars/anders.png"},
-						{kind: "listItem", title: "Brian", img: "assets/avatars/brian.png"},
-						{kind: "listItem", title: "Eric", content: "Chillin':)", img: "assets/avatars/erik.png"},
-						{kind: "listItem", title: "Tim", img: "assets/avatars/tim.png"}
+					{kind: "bbUI.ImageList", ontap: "openConversation", components: [
+						{kind: "bbUI.ListItem", title: "Alec", content: "Talk to me!", img: "assets/avatars/alec.png"},
+						{kind: "bbUI.ListItem", title: "Dallas", content: "stiff and mechanic", img: "assets/avatars/dallas.png"},
+						{kind: "bbUI.ListItem", title: "Anders", content: "absolut maniac", img: "assets/avatars/anders.png"},
+						{kind: "bbUI.ListItem", title: "Brian", img: "assets/avatars/brian.png"},
+						{kind: "bbUI.ListItem", title: "Eric", content: "Chillin':)", img: "assets/avatars/erik.png"},
+						{kind: "bbUI.ListItem", title: "Tim", img: "assets/avatars/tim.png"}
 					]}
 				]},
 				{style: "height: 109px", components: [
