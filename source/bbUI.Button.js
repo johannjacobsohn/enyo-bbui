@@ -2,7 +2,7 @@ enyo.kind({
 	name: "bbUI.Button",
 	bbStyle: "fit", // fit, stretch
 	attributes: {
-		"data-bb-type": "button",
+		"data-bb-type": "button"
 	},
 	published: {
 		disabled: false,

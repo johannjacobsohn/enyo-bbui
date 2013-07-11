@@ -24,6 +24,6 @@ enyo.kind({
 	},
 	create: function(){
 		this.inherited(arguments);
-		this.attributes['data-bb-selected'] = this.selected;
+		this.attributes["data-bb-selected"] = this.selected;
 	}
 });

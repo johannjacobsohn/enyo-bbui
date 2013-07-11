@@ -1,7 +1,7 @@
 /**
- * _bbUI.imageList_
- *
- * https://github.com/blackberry/bbUI.js/wiki/Image-List
+    _bbUI.imageList_
+    
+    https://github.com/blackberry/bbUI.js/wiki/Image-List
  */
 enyo.kind({
 	name: "bbUI.ImageList",
@@ -35,7 +35,7 @@ enyo.kind({
 	title: "",
 	img: "",
 	attributes: {
-		"data-bb-type": "item",
+		"data-bb-type": "item"
 		//onbtnclick="addItem()"
 	},
 	create: function(){

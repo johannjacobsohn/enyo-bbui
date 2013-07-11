@@ -9,11 +9,15 @@ enyo.kind({
 		this.doActivate();
 	},
 	checkedChanged: function(inOldValue){
-		if(typeof inOldValue === "undefined") return;
+		if(typeof inOldValue === "undefined"){
+			return;
+		}
 		this.node.setChecked( this.checked );
 	},
 	disabledChanged: function(inOldValue){
-		if(typeof inOldValue === "undefined") return;
+		if(typeof inOldValue === "undefined"){
+			return;
+		}
 		this.node[this.disabled ? "disable" : "enable"]();
 	},
 	rendered: function(){

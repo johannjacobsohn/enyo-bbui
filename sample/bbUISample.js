@@ -7,7 +7,7 @@ enyo.kind({
 		if(comment){
 			this.$.input.setValue("");
 
-			var c = this.$.me.createComponent({content: comment, image: "assets/bbmBubbles/bullet.png"});
+			this.$.me.createComponent({content: comment, image: "assets/bbmBubbles/bullet.png"});
 			this.$.me.reload();
 			this.$.me.render();
 		}
@@ -22,7 +22,7 @@ enyo.kind({
 		this.$.panels.setIndex(2);
 	},
 	saveSettings: function(){
-		alert("saved");
+		enyo.log("saved");
 	},
 	components:[
 		{kind: "bbUI.Init", controlsDark: true, listsDark: false},
@@ -31,7 +31,7 @@ enyo.kind({
 			// contactlist view
 			{kind: "FittableRows", components:[
 				{style: "height: 92px", components: [
-					{kind: "bbUI.TitleBar", caption: "bbUI.js/EnyoJS"},
+					{kind: "bbUI.TitleBar", caption: "bbUI.js/EnyoJS"}
 				]},
 				{kind: "enyo.Scroller", fit: true, horizontal: "hidden", components: [
 					{kind: "bbUI.ImageList", ontap: "openConversation", components: [
@@ -55,20 +55,20 @@ enyo.kind({
 			// Conversation view
 			{style: "background: #fff", kind: "FittableRows", components: [
 				{style: "height: 92px", components: [
-					{kind: "bbUI.TitleBar", caption: "Eric", accentText: "Talk to me!", onactiontap: "action", img: "assets/avatars/alec.png"},
+					{kind: "bbUI.TitleBar", caption: "Eric", accentText: "Talk to me!", onactiontap: "action", img: "assets/avatars/alec.png"}
 				]},
 				{kind: "enyo.Scroller", fit: true, horizontal: "hidden", components: [
 					{kind: "bbUI.BBMbubbles", alignment: "left", components: [
-						{content: "Hey there", image: "assets/bbmBubbles/read.png"},
+						{content: "Hey there", image: "assets/bbmBubbles/read.png"}
 					]},
 					{kind: "bbUI.BBMbubbles", alignment: "right", components: [
-						{content: "Hi :)", image: "assets/bbmBubbles/read.png"},
+						{content: "Hi :)", image: "assets/bbmBubbles/read.png"}
 					]},
 					{kind: "bbUI.BBMbubbles", alignment: "left", components: [
-						{content: "Whats up?", image: "assets/bbmBubbles/read.png"},
+						{content: "Whats up?", image: "assets/bbmBubbles/read.png"}
 					]},
 					{kind: "bbUI.BBMbubbles", alignment: "right", name: "me", components: [
-						{content: "nothin'", image: "assets/bbmBubbles/read.png"},
+						{content: "nothin'", image: "assets/bbmBubbles/read.png"}
 					]}
 				]},
 				{style: "height: 189px", components: [
@@ -82,7 +82,7 @@ enyo.kind({
 			// settings view
 			{style: "background: #fff", kind: "FittableRows", components: [
 				{style: "height: 92px", components: [
-					{kind: "bbUI.TitleBar", caption: "Settings", actionCaption: "Save", onactiontap: "saveSettings"},
+					{kind: "bbUI.TitleBar", caption: "Settings", actionCaption: "Save", onactiontap: "saveSettings"}
 				]},
 				{kind: "enyo.Scroller", fit: true, horizontal: "hidden", components: [
 					{kind: "bbUI.ControlGroup"}

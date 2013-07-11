@@ -5,7 +5,7 @@ enyo.kind({
 	controlsDark: false,       // If set to true, the controls will use the dark theme
 	listsDark: false,          // If set to true, lists will use the dark theme (you need a dark background)
 	coloredTitleBar: false,    // If set to true, the title bar will be colored based on the highlight color
-	highlightColor: '#00A8DF', // A highlight color to use when a user selects an item   
+	highlightColor: "#00A8DF", // A highlight color to use when a user selects an item   
 /*
 	{
 		onbackkey: null,                   // Custom handler for back key on BlackBerry 5/6/7 smartphones
@@ -25,7 +25,7 @@ enyo.kind({
 
 		bb.init(config);
 
-		document.addEventListener('webworksready', function(e) {
+		document.addEventListener("webworksready", function(e) {
 			enyo.Signals.send("webworksready");
 		});
 	}
