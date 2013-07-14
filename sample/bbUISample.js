@@ -43,12 +43,10 @@ enyo.kind({
 						{kind: "bbUI.ListItem", title: "Tim", img: "assets/avatars/tim.png"}
 					]}
 				]},
-				{style: "height: 109px", components: [
-					{kind: "bbUI.ActionBar", onback: "openList", components: [
-						{kind: "bbUI.Action", bbStyle: "tap", content: "Settings", ontap: "openSettings", img:"assets/ic_settings.png"},
-						{kind: "bbUI.Action", bbStyle: "tap", content: "About", img:"assets/ic_info.png"},
-						{kind: "bbUI.Action", bbStyle: "tap", content: "Delete History", pin: true, img:"assets/ic_delete.png"}
-					]}
+				{kind: "bbUI.ActionBar", onback: "openList", components: [
+					{kind: "bbUI.Action", type: "tap", selected: true, caption: "Settings", img:"assets/ic_settings.png", ontap: "openSettings"},
+					{kind: "bbUI.Action", visible: false, type: "tab", caption: "About", img:"assets/ic_info.png"},
+					{kind: "bbUI.Action", type: "button", caption: "Delete History", overflow: true, accentText: "Cannot be undone!", img:"assets/ic_delete.png"}
 				]}
 			]},
 
@@ -71,11 +69,8 @@ enyo.kind({
 						{content: "nothin'", image: "assets/bbmBubbles/read.png"}
 					]}
 				]},
-				{style: "height: 189px", components: [
-					{kind: "bbUI.Input", value:"New Message"},
-					{kind: "bbUI.ActionBar", onback: "openList", backCaption: "back", components: [
-						{kind: "bbUI.Action", content: "Delete History", pin: true, img:"assets/ic_settings.png"}
-					]}
+				{kind: "bbUI.ActionBar", onback: "openList", backCaption: "back", components: [
+					{kind: "bbUI.Action", overflow: true, caption: "Delete History", pin: true, img:"assets/ic_settings.png"}
 				]}
 			]},
 
@@ -87,9 +82,7 @@ enyo.kind({
 				{kind: "enyo.Scroller", fit: true, horizontal: "hidden", components: [
 					{kind: "bbUI.ControlGroup"}
 				]},
-				{style: "height: 109px", components: [
-					{kind: "bbUI.ActionBar", onback: "openList", backCaption: "back"}
-				]}
+				{kind: "bbUI.ActionBar", onback: "openList", backCaption: "back"}
 			]}
 		]}
 	]

@@ -5,7 +5,7 @@ A bridge between [EnyoJS](http://enyojs.com) and
 [bbUI.js](https://github.com/blackberry/bbUI.js/). Think onyx, only with
 Blackberry styling.
 
-*This is project is still "alpha" - don't use it in production!* Currently,
+**This is project is still "alpha" - don't use it in production!** Currently,
 only Blackberry 10 and Blackberry Tablet OS (Playbook) are supported,
 support for BB7/6/5 is _very_ unlikely.
 
