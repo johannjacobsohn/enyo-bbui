@@ -30,9 +30,7 @@ enyo.kind({
 
 			// contactlist view
 			{kind: "FittableRows", components:[
-				{style: "height: 92px", components: [
-					{kind: "bbUI.TitleBar", caption: "bbUI.js/EnyoJS"}
-				]},
+				{kind: "bbUI.TitleBar", caption: "bbUI.js/EnyoJS"},
 				{kind: "enyo.Scroller", fit: true, horizontal: "hidden", components: [
 					{kind: "bbUI.ImageList", ontap: "openConversation", components: [
 						{kind: "bbUI.ListItem", title: "Alec", content: "Talk to me!", img: "assets/avatars/alec.png"},
@@ -44,17 +42,15 @@ enyo.kind({
 					]}
 				]},
 				{kind: "bbUI.ActionBar", onback: "openList", components: [
-					{kind: "bbUI.Action", type: "tap", selected: true, caption: "Settings", img:"assets/ic_settings.png", ontap: "openSettings"},
-					{kind: "bbUI.Action", visible: false, type: "tab", caption: "About", img:"assets/ic_info.png"},
+					{kind: "bbUI.Action", type: "tab", selected: true, caption: "Contacts", img:"assets/ic_info.png"},
+					{kind: "bbUI.Action", type: "tap", caption: "Settings", img:"assets/ic_settings.png", ontap: "openSettings"},
 					{kind: "bbUI.Action", type: "button", caption: "Delete History", overflow: true, accentText: "Cannot be undone!", img:"assets/ic_delete.png"}
 				]}
 			]},
 
 			// Conversation view
 			{style: "background: #fff", kind: "FittableRows", components: [
-				{style: "height: 92px", components: [
-					{kind: "bbUI.TitleBar", caption: "Eric", accentText: "Talk to me!", onactiontap: "action", img: "assets/avatars/alec.png"}
-				]},
+				{kind: "bbUI.TitleBar", caption: "Eric", accentText: "Talk to me!", img: "assets/avatars/alec.png"},
 				{kind: "enyo.Scroller", fit: true, horizontal: "hidden", components: [
 					{kind: "bbUI.BBMbubbles", alignment: "left", components: [
 						{content: "Hey there", image: "assets/bbmBubbles/read.png"}
@@ -76,13 +72,10 @@ enyo.kind({
 
 			// settings view
 			{style: "background: #fff", kind: "FittableRows", components: [
-				{style: "height: 92px", components: [
-					{kind: "bbUI.TitleBar", caption: "Settings", actionCaption: "Save", onactiontap: "saveSettings"}
-				]},
+				{kind: "bbUI.TitleBar", caption: "Settings", actionCaption: "Save", onback: "openList", backCaption: "Cancel", onactiontap: "saveSettings"},
 				{kind: "enyo.Scroller", fit: true, horizontal: "hidden", components: [
 					{kind: "bbUI.ControlGroup"}
-				]},
-				{kind: "bbUI.ActionBar", onback: "openList", backCaption: "back"}
+				]}
 			]}
 		]}
 	]
