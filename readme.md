@@ -17,7 +17,7 @@ Supported Widgets:
 - [DropDown](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Select) (bbUI.js: [DropDown](https://github.com/blackberry/bbUI.js/wiki/DropDowns))
 - [Pill-Buttons](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.PillButtons) (bbUI.js: [Pill Buttons](https://github.com/blackberry/bbUI.js/wiki/Pill-Buttons))
 - [Inputs](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Input) (bbUI.js: [Inputs](https://github.com/blackberry/bbUI.js/wiki/Inputs))
-- [Toggle Button](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Toggle) (bbUI.js: [Toggle Buttons](https://github.com/blackberry/bbUI.js/wiki/Toggle-Buttons))
+- [Toggle Button](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Toggle) compatible with [onyx.Toggle](http://enyojs.com/api/#onyx.ToggleButton) (bbUI.js: [Toggle Buttons](https://github.com/blackberry/bbUI.js/wiki/Toggle-Buttons))
 - [Button](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Button) (bbUI.js: [Buttons](https://github.com/blackberry/bbUI.js/wiki/Buttons))
 - [Checkboxes](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Checkbox) (bbUI.js: [Checkboxes](https://github.com/blackberry/bbUI.js/wiki/Checkboxes))
 - [ProgressIndicator](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Progress) (bbUI.js: [Progress Indicator](https://github.com/blackberry/bbUI.js/wiki/Progress-Indicator))
