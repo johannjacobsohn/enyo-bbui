@@ -21,11 +21,11 @@ Supported Widgets:
 - [Checkboxes](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Checkbox) (bbUI.js: [Checkboxes](https://github.com/blackberry/bbUI.js/wiki/Checkboxes))
 - [Button](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Button) (bbUI.js: [Buttons](https://github.com/blackberry/bbUI.js/wiki/Buttons))
 - [Spinner](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Spinner) (bbUI.js: [Activity Indicator](https://github.com/blackberry/bbUI.js/wiki/Activity-Indicator))
+- [ProgressBar](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.ProgressBar) (bbUI.js: [Progress Indicator](https://github.com/blackberry/bbUI.js/wiki/Progress-Indicator))
 
 Work in Progress:
 -----------------
 
-- [ProgressIndicator](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Progress) (bbUI.js: [Progress Indicator](https://github.com/blackberry/bbUI.js/wiki/Progress-Indicator))
 - [BBMBubbles](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.BBMbubbles) (bbUI.js: [BBM Bubbles](https://github.com/blackberry/bbUI.js/wiki/BBM-Bubbles))
 - [RadioButtons](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.RadioButton) (bbUI.js: [Radio Buttons](https://github.com/blackberry/bbUI.js/wiki/Radio-Buttons))
 - [ImageList](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.imageList) (bbUI.js: [Image List](https://github.com/blackberry/bbUI.js/wiki/Image-List))
