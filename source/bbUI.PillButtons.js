@@ -4,8 +4,8 @@
     Pill Buttons Widget](https://github.com/blackberry/bbUI.js/wiki/Pill-Buttons).
 
     This control is similar to, but not interchangeable with, an [enyo group
-    of buttons](http://enyojs.com/api/#enyo.Group) and only accepts
-    [bbUI.PillButton](#bbUI.PillButton) components as children.
+    of buttons](http://enyojs.com/api/#enyo.Group) or an [onyx.RadioGroup](http://enyojs.com/api/#onyx.RadioGroup)
+    and only accepts [bbUI.PillButton](#bbUI.PillButton) components as children.
 
     **Usage**:
 
