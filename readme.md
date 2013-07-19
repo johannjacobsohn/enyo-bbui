@@ -20,13 +20,13 @@ Supported Widgets:
 - [Toggle Button](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Toggle), compatible with [onyx.Toggle](http://enyojs.com/api/#onyx.ToggleButton) (bbUI.js: [Toggle Buttons](https://github.com/blackberry/bbUI.js/wiki/Toggle-Buttons))
 - [Checkboxes](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Checkbox) (bbUI.js: [Checkboxes](https://github.com/blackberry/bbUI.js/wiki/Checkboxes))
 - [Button](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Button) (bbUI.js: [Buttons](https://github.com/blackberry/bbUI.js/wiki/Buttons))
+- [Spinner](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Spinner) (bbUI.js: [Activity Indicator](https://github.com/blackberry/bbUI.js/wiki/Activity-Indicator))
 
 Work in Progress:
 -----------------
 
 - [ProgressIndicator](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Progress) (bbUI.js: [Progress Indicator](https://github.com/blackberry/bbUI.js/wiki/Progress-Indicator))
 - [BBMBubbles](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.BBMbubbles) (bbUI.js: [BBM Bubbles](https://github.com/blackberry/bbUI.js/wiki/BBM-Bubbles))
-- [ActivityIndicator](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.ActivityIndicator) (bbUI.js: [Activity Indicator](https://github.com/blackberry/bbUI.js/wiki/Activity-Indicator))
 - [RadioButtons](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.RadioButton) (bbUI.js: [Radio Buttons](https://github.com/blackberry/bbUI.js/wiki/Radio-Buttons))
 - [ImageList](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.imageList) (bbUI.js: [Image List](https://github.com/blackberry/bbUI.js/wiki/Image-List))
 - Label Control Container & [ControlGroup](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.ControlGroup)  (bbUI.js: [Label Control Container](https://github.com/blackberry/bbUI.js/wiki/Label-Control-Container))
