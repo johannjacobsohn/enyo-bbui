@@ -8,6 +8,7 @@ enyo.depends(
 	"bbUI.Spinner.js",
 	"bbUI.ProgressBar.js",
 	"bbUI.RadioButton.js",
+	"bbUI.RadioButton.css",
 	"bbUI.Slider.js",
 	"bbUI.Input.js",
 	"bbUI.PillButtons.js",
