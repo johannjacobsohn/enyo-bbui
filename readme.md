@@ -23,6 +23,7 @@ Supported Widgets:
 - [Spinner](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Spinner) (bbUI.js: [Activity Indicator](https://github.com/blackberry/bbUI.js/wiki/Activity-Indicator))
 - [ProgressBar](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.ProgressBar) (bbUI.js: [Progress Indicator](https://github.com/blackberry/bbUI.js/wiki/Progress-Indicator))
 - [RadioButtons](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.RadioButton) (bbUI.js: [Radio Buttons](https://github.com/blackberry/bbUI.js/wiki/Radio-Buttons))
+- [Slider](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Slider) (bbUI.js: [Sliders](https://github.com/blackberry/bbUI.js/wiki/Sliders))
 
 Work in Progress:
 -----------------
@@ -30,7 +31,6 @@ Work in Progress:
 - [BBMBubbles](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.BBMbubbles) (bbUI.js: [BBM Bubbles](https://github.com/blackberry/bbUI.js/wiki/BBM-Bubbles))
 - [ImageList](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.imageList) (bbUI.js: [Image List](https://github.com/blackberry/bbUI.js/wiki/Image-List))
 - Label Control Container & [ControlGroup](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.ControlGroup)  (bbUI.js: [Label Control Container](https://github.com/blackberry/bbUI.js/wiki/Label-Control-Container))
-- [Slider](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.Slider) (bbUI.js: [Sliders](https://github.com/blackberry/bbUI.js/wiki/Sliders))
 
 Soon:
 -----

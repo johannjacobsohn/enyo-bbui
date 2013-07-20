@@ -1,0 +1,10 @@
+.bb-slider .fill {
+	margin-top: 0;
+	margin-left: 0;
+}
+.bb-slider .halo {
+    margin: -16px;
+}
+.bb-slider .indicator { 
+    margin: 5px;
+}
