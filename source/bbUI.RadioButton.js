@@ -1,6 +1,6 @@
 /**
-    A _bbUI.RadioButton_ renders an HTML Radio Button in either the
-    BlackBerry 10 styling or the traditional Mozilla styling.
+    A _bbUI.RadioButton_ renders an [bbUI.js Radio Button](https://github.com/blackberry/bbUI.js/wiki/Radio-Buttons)
+    in either the BlackBerry 10 styling or the traditional Mozilla styling.
 
     **Usage:**
 
@@ -26,8 +26,7 @@ enyo.kind({
 	},
 	//* @protected
 	attributes: {
-		type: "radio",
-		onchange: "enyo.$[this.id].handleChange()"
+		type: "radio"
 	},
 	handleChange: function(){
 		this.checked = this.node.getChecked();
@@ -49,7 +48,7 @@ enyo.kind({
 		this.inherited(arguments);
 		if(this.hasNode()){
 			bb.radio.style( this.node );
+			enyo.dispatcher.listen(this.node, "change", this.bindSafely("handleChange"));
 		}
 	}
 });
-

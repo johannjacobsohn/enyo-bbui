@@ -8,9 +8,6 @@ enyo.kind({
 	name: "bbUI.Checkbox",
 	kind: "enyo.Checkbox",
 	//* @protected
-	attributes: {
-		onchange: "enyo.$[this.id].handleChange()"
-	},
 	handleChange: function(){
 		this.checked = this.active = this.node.getChecked();
 		this.doActivate({originator: this});
@@ -31,6 +28,7 @@ enyo.kind({
 		this.inherited(arguments);
 		if(this.hasNode()){
 			bb.checkbox.style(this.node);
+			enyo.dispatcher.listen(this.node, "change", this.bindSafely("handleChange"));
 		}
 	}
 });

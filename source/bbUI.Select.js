@@ -19,9 +19,6 @@ enyo.kind({
 		disabled: false
 	},
 	//* @protected
-	attributes: {
-		onchange: "enyo.$[this.id].handleChange()"
-	},
 	handleChange: function(){
 		if(this.hasNode()){
 			this.setValue(this.node.value);
@@ -69,6 +66,7 @@ enyo.kind({
 		if(this.hasNode()){
 			bb.dropdown.style(this.node);
 			this.node.setSelectedItem(this.selected);
+			enyo.dispatcher.listen(this.node, "change", this.bindSafely("handleChange"));
 		}
 	}
 });

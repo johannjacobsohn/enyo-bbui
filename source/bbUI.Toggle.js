@@ -32,9 +32,6 @@ enyo.kind({
 		"data-bb-type": "toggle",
 		onchange: "enyo.$[this.id].handleChange()"
 	},
-	handlers: {
-		onchange: "handlechange"
-	},
 	handleChange: function(){
 		this.value = this.node.getChecked();
 		this.doChange({value: this.value});

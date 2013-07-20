@@ -12,7 +12,7 @@ enyo.kind({
 		{kind: "onyx.Checkbox", onActivate: "handleChange"},
 		{content: "enyo.Checkbox:"},
 		{kind: "enyo.Checkbox", onActivate: "handleChange"},
-
+		{content: "Receiver:"},
 		{kind: "bbUI.Checkbox", name: "second"}
 	]
 });
