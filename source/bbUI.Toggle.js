@@ -37,14 +37,26 @@ enyo.kind({
 		this.doChange({value: this.value});
 	},
 	valueChanged: function(){
-		this.node.setChecked(this.value);
+		if(this.hasNode()){
+			this.node.setChecked(this.value);
+		} else {
+			this.attributes["data-bb-checked"] = this.value;
+		}
 		this.doChange({value: this.value});
 	},
 	onContentChanged: function(){
-		this.node.setOnCaption(this.onContent);
+		if(this.hasNode()){
+			this.node.setOnCaption(this.onContent);
+		} else {
+			this.attributes["data-bb-on"] = this.onContent;
+		}
 	},
 	offContentChanged: function(){
-		this.node.setOffCaption(this.offContent);
+		if(this.hasNode()){
+			this.node.setOffCaption(this.offContent);
+		} else {
+			this.attributes["data-bb-off"] = this.offContent;
+		}
 	},
 	disabledChanged: function(){
 		if(this.hasNode()){
