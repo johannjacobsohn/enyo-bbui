@@ -2,9 +2,9 @@
     _bbUI.BBMbubbles_
 
     https://github.com/blackberry/bbUI.js/wiki/BBM-Bubbles
-    
 
     **Usage:**
+
         {kind: "bbUI.BBMbubbles", alignment: "left", components: [
             {content: "Hey there", image: "assets/bbmBubbles/read.png"},
         ]}

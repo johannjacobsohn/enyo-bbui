@@ -1,6 +1,15 @@
 /**
 	_bbUI.Select_ implements [the bbUI.js Dropdown](https://github.com/blackberry/bbUI.js/wiki/DropDowns) as a
 	[enyo.Select](http://enyojs.com/api/#enyo.Select). This is similar to, but not interchangable with, the onyx.Menu.
+
+	**Usage:**
+
+		{kind: "bbUI.Select", label: "first select", selected: 2, onchange: "handleChange", components: [
+			{kind: "bbUI.Option", content: "First", accentText: "Subcaption"},
+			{kind: "bbUI.Option", content: "Second"},
+			{kind: "bbUI.Option", content: "Third"}
+		]},
+	
 */
 enyo.kind({
 	name: "bbUI.Select",
