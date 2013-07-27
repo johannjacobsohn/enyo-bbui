@@ -7,7 +7,7 @@ enyo.kind({
 		if(comment){
 			this.$.input.setValue("");
 
-			var c = this.$.me.createComponent({content: comment, image: "assets/bbmBubbles/bullet.png"});
+			this.$.me.createComponent({content: comment, image: "assets/bbmBubbles/bullet.png"});
 			this.$.me.reload();
 			this.$.me.render();
 		}
@@ -22,73 +22,59 @@ enyo.kind({
 		this.$.panels.setIndex(2);
 	},
 	saveSettings: function(){
-		alert("saved");
+		enyo.log("saved");
 	},
 	components:[
-		{kind: "bbUI.init", controlsDark: true, listsDark: false},
+		{kind: "bbUI.Init", controlsDark: true, listsDark: false},
 		{kind: "Panels", arrangerKind: "CollapsingArranger", draggable: false, fit:true, style: "height: 100%", components: [
 
 			// contactlist view
 			{kind: "FittableRows", components:[
-				{style: "height: 92px", components: [
-					{kind: "bbUI.TitleBar", caption: "bbUI.js/EnyoJS"},
-				]},
+				{kind: "bbUI.TitleBar", caption: "bbUI.js/EnyoJS"},
 				{kind: "enyo.Scroller", fit: true, horizontal: "hidden", components: [
-					{kind: "bbUI.imageList", ontap: "openConversation", components: [
-						{kind: "listItem", title: "Alec", content: "Talk to me!", img: "assets/avatars/alec.png"},
-						{kind: "listItem", title: "Dallas", content: "stiff and mechanic", img: "assets/avatars/dallas.png"},
-						{kind: "listItem", title: "Anders", content: "absolut maniac", img: "assets/avatars/anders.png"},
-						{kind: "listItem", title: "Brian", img: "assets/avatars/brian.png"},
-						{kind: "listItem", title: "Eric", content: "Chillin':)", img: "assets/avatars/erik.png"},
-						{kind: "listItem", title: "Tim", img: "assets/avatars/tim.png"}
+					{kind: "bbUI.ImageList", ontap: "openConversation", components: [
+						{kind: "bbUI.ListItem", title: "Alec", content: "Talk to me!", img: "assets/avatars/alec.png"},
+						{kind: "bbUI.ListItem", title: "Dallas", content: "stiff and mechanic", img: "assets/avatars/dallas.png"},
+						{kind: "bbUI.ListItem", title: "Anders", content: "absolut maniac", img: "assets/avatars/anders.png"},
+						{kind: "bbUI.ListItem", title: "Brian", img: "assets/avatars/brian.png"},
+						{kind: "bbUI.ListItem", title: "Eric", content: "Chillin':)", img: "assets/avatars/erik.png"},
+						{kind: "bbUI.ListItem", title: "Tim", img: "assets/avatars/tim.png"}
 					]}
 				]},
-				{style: "height: 109px", components: [
-					{kind: "bbUI.ActionBar", onback: "openList", components: [
-						{kind: "bbUI.Action", bbStyle: "tap", content: "Settings", ontap: "openSettings", img:"assets/ic_settings.png"},
-						{kind: "bbUI.Action", bbStyle: "tap", content: "About", img:"assets/ic_info.png"},
-						{kind: "bbUI.Action", bbStyle: "tap", content: "Delete History", pin: true, img:"assets/ic_delete.png"}
-					]}
+				{kind: "bbUI.ActionBar", onback: "openList", components: [
+					{kind: "bbUI.Action", type: "tab", selected: true, caption: "Contacts", img:"assets/ic_info.png"},
+					{kind: "bbUI.Action", type: "tap", caption: "Settings", img:"assets/ic_settings.png", ontap: "openSettings"},
+					{kind: "bbUI.Action", type: "button", caption: "Delete History", overflow: true, accentText: "Cannot be undone!", img:"assets/ic_delete.png"}
 				]}
 			]},
 
 			// Conversation view
 			{style: "background: #fff", kind: "FittableRows", components: [
-				{style: "height: 92px", components: [
-					{kind: "bbUI.TitleBar", caption: "Eric", accentText: "Talk to me!", onactiontap: "action", img: "assets/avatars/alec.png"},
-				]},
+				{kind: "bbUI.TitleBar", caption: "Eric", accentText: "Talk to me!", img: "assets/avatars/alec.png"},
 				{kind: "enyo.Scroller", fit: true, horizontal: "hidden", components: [
 					{kind: "bbUI.BBMbubbles", alignment: "left", components: [
-						{content: "Hey there", image: "assets/bbmBubbles/read.png"},
+						{content: "Hey there", image: "assets/bbmBubbles/read.png"}
 					]},
 					{kind: "bbUI.BBMbubbles", alignment: "right", components: [
-						{content: "Hi :)", image: "assets/bbmBubbles/read.png"},
+						{content: "Hi :)", image: "assets/bbmBubbles/read.png"}
 					]},
 					{kind: "bbUI.BBMbubbles", alignment: "left", components: [
-						{content: "Whats up?", image: "assets/bbmBubbles/read.png"},
+						{content: "Whats up?", image: "assets/bbmBubbles/read.png"}
 					]},
 					{kind: "bbUI.BBMbubbles", alignment: "right", name: "me", components: [
-						{content: "nothin'", image: "assets/bbmBubbles/read.png"},
+						{content: "nothin'", image: "assets/bbmBubbles/read.png"}
 					]}
 				]},
-				{style: "height: 189px", components: [
-					{kind: "bbUI.Input", value:"New Message"},
-					{kind: "bbUI.ActionBar", onback: "openList", backCaption: "back", components: [
-						{kind: "bbUI.Action", content: "Delete History", pin: true, img:"assets/ic_settings.png"}
-					]}
+				{kind: "bbUI.ActionBar", onback: "openList", backCaption: "back", components: [
+					{kind: "bbUI.Action", overflow: true, caption: "Delete History", pin: true, img:"assets/ic_settings.png"}
 				]}
 			]},
 
 			// settings view
 			{style: "background: #fff", kind: "FittableRows", components: [
-				{style: "height: 92px", components: [
-					{kind: "bbUI.TitleBar", caption: "Settings", actionCaption: "Save", onactiontap: "saveSettings"},
-				]},
+				{kind: "bbUI.TitleBar", caption: "Settings", actionCaption: "Save", onback: "openList", backCaption: "Cancel", onactiontap: "saveSettings"},
 				{kind: "enyo.Scroller", fit: true, horizontal: "hidden", components: [
 					{kind: "bbUI.ControlGroup"}
-				]},
-				{style: "height: 109px", components: [
-					{kind: "bbUI.ActionBar", onback: "openList", backCaption: "back"}
 				]}
 			]}
 		]}

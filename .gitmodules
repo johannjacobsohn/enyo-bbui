@@ -1,0 +1,3 @@
+[submodule "lib/bbUI.js"]
+	path = lib/bbUI.js
+	url = https://github.com/blackberry/bbUI.js.git

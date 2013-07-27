@@ -1,7 +1,7 @@
 /**
- * _bbUI.ControlGroup_
- *
- * https://github.com/blackberry/bbUI.js/wiki/Control-Groups
+    _bbUI.ControlGroup_
+    
+    https://github.com/blackberry/bbUI.js/wiki/Control-Groups
 */
 enyo.kind({
 	name: "bbUI.ControlGroup",

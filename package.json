@@ -1,0 +1,11 @@
+{
+	"name": "enyo-bbui",
+	"version": "0.0.1",
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"jshint": "",
+		"mocha": "",
+		"expect.js": ""
+	}
+}

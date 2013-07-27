@@ -1,18 +1,31 @@
+/**
+    A _bbUI.Button_ implements an [bbUI
+    Button](https://github.com/blackberry/bbUI.js/wiki/Buttons) as a
+    [enyo.Button](http://enyojs.com/api/#enyo.Button). It's interchangeable
+    with an [onyx.Button](http://enyojs.com/api/#onyx.Button) if you ignore
+    the _image_ property. Cannot contain other components.
+
+    If the content is left empty, the button will become an image button.
+*/
 enyo.kind({
 	name: "bbUI.Button",
-	bbStyle: "fit", // fit, stretch
-	attributes: {
-		"data-bb-type": "button",
-	},
+	kind: "enyo.Button",
 	published: {
-		disabled: false,
+		//* An icon to be displayed alongside the content
 		image: null
+	},
+	//* @protected
+	tag: "div",
+	attributes: {
+		"data-bb-type": "button"
 	},
 	imageChanged: function(){
 		this.node.setImage( this.image );
 	},
 	disabledChanged: function(){
-		this.node[this.disabled ? "disable" : "enable"]();
+		if(this.hasNode()){
+			this.node[this.disabled ? "disable" : "enable"]();
+		}
 	},
 	contentChanged: function(){
 		if(this.hasNode()){
@@ -20,14 +33,13 @@ enyo.kind({
 		}
 	},
 	create: function(){
-		this.attributes["data-bb-style"] = this.bbStyle;
-		this.inherited(arguments);
-	},
-	rendered: function(){
 		this.inherited(arguments);
 		if(this.image){
 			this.attributes["data-bb-img"] = this.image;
 		}
+	},
+	rendered: function(){
+		this.inherited(arguments);
 		if(this.hasNode()){
 			bb.button.style(this.node);
 		}
