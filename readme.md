@@ -38,6 +38,7 @@ Soon:
 
 - ContextMenu (bbUI.js: [Context Menus](https://github.com/blackberry/bbUI.js/wiki/Context-Menus))
 - GridList (bbUI.js: [Grid List](https://github.com/blackberry/bbUI.js/wiki/Grid-List))
+- [Webworks Active Frames / Window Covers](https://developer.blackberry.com/html5/apis/blackberry.ui.cover.html)
 
 [ScrollPanel](https://github.com/blackberry/bbUI.js/wiki/Scroll-Panel) can
 be easily done using [enyo layout panels](https://github.com/enyojs/enyo/wiki/Panels)
