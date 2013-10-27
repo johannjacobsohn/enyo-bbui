@@ -50,7 +50,7 @@ enyo.kind({
 	selectedTabChanged: function(inOldValue){
 		var l = this.children.length;
 		while(l--){
-			if(this.children[l].name === name){
+			if(this.children[l].name === this.selectedTab){
 				if(this.hasNode() && this.children[l].hasNode()){
 					this.node.setSelectedTab( this.children[l].node );
 				}
