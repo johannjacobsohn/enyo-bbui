@@ -31,13 +31,14 @@ Work in Progress:
 - [BBMBubbles](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.BBMbubbles) (bbUI.js: [BBM Bubbles](https://github.com/blackberry/bbUI.js/wiki/BBM-Bubbles))
 - [ImageList](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.imageList) (bbUI.js: [Image List](https://github.com/blackberry/bbUI.js/wiki/Image-List))
 - Label Control Container & [ControlGroup](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.ControlGroup)  (bbUI.js: [Label Control Container](https://github.com/blackberry/bbUI.js/wiki/Label-Control-Container))
+- [ScreenMenu](http://johannjacobsohn.github.io/enyo-bbui/api/#bbUI.ScreenMenu) (bbUI.js: [Screen Menu](https://github.com/blackberry/bbUI.js/wiki/Screen-Menus))
 
 Soon:
 -----
 
 - ContextMenu (bbUI.js: [Context Menus](https://github.com/blackberry/bbUI.js/wiki/Context-Menus))
 - GridList (bbUI.js: [Grid List](https://github.com/blackberry/bbUI.js/wiki/Grid-List))
-- ScreenMenu (bbUI.js: [Screen Menu](https://github.com/blackberry/bbUI.js/wiki/Screen-Menus))
+- [Webworks Active Frames / Window Covers](https://developer.blackberry.com/html5/apis/blackberry.ui.cover.html)
 
 [ScrollPanel](https://github.com/blackberry/bbUI.js/wiki/Scroll-Panel) can
 be easily done using [enyo layout panels](https://github.com/enyojs/enyo/wiki/Panels)

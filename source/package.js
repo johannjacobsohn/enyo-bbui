@@ -17,5 +17,6 @@ enyo.depends(
 	"bbUI.BBMbubbles.js",
 	"bbUI.Init.js",
 	"bbUI.ImageList.js",
-	"bbUI.ControlGroup.js"
+	"bbUI.ControlGroup.js",
+	"bbUI.ScreenMenu.js"
 );

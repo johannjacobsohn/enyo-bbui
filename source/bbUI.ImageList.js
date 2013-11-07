@@ -8,6 +8,8 @@ enyo.kind({
 	//~ kind: "enyo.List",
 	bbStyle: "arrowbuttons",
 	bbimageLoading: "",
+	
+	//* @protected
 	attributes: {
 		"data-bb-type": "image-list"
 	},
@@ -24,11 +26,11 @@ enyo.kind({
 	}
 });
 
+
+//* @public
 /**
- * _bbUI.listItem_
- *
- * https://github.com/blackberry/bbUI.js/wiki/Image-List
- *
+    _bbUI.listItem_
+    https://github.com/blackberry/bbUI.js/wiki/Image-List
  */
 enyo.kind({
 	name: "bbUI.ListItem",
