@@ -3,7 +3,7 @@
 <head>
 	<title>bbUI Sample</title>
 
-	<!-- enyo --> 
+	<!-- enyo -->
 	<link rel="stylesheet" href="http://nightly.enyojs.com/latest/enyo-nightly/enyo.css">
 	<script src="http://nightly.enyojs.com/latest/enyo-nightly/enyo.js"></script>
 	<script src="http://nightly.enyojs.com/latest/lib/layout/package.js"></script>
@@ -11,7 +11,7 @@
 	<!-- bbUI/enyo -->
 	<script src="../package.js" type="text/javascript"></script>
 
-	<!-- Sample --> 
+	<!-- Sample -->
 	<script src="bbUISample.js" type="text/javascript"></script>
 </head>
 <body class="enyo-unselectable">
@@ -19,6 +19,15 @@
 		document.addEventListener('webworksready', function(e) {
 			new bbUISample().renderInto(document.body);
 		});
+
+		// ensure ripple emulator is running
+		if(document.getElementById("tinyhippos-injected")){
+			if(window.location.href.indexOf("?enableripple") === -1){
+				window.location.href = "?enableripple=true";
+			}
+		} else {
+			alert("Sorry... for the sampler to work you need to use Chrome/Chromium and the Ripple Emulator.");
+		}
 	</script>
 </body>
 </html>
